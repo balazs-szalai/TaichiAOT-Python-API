@@ -293,7 +293,6 @@ class TiArgumentValue(Union):
         - **ndarray**: :class:`TiNdArray` - `An ND-array to be bound.`
         - **texture**: :class:`TiTexture` - `A texture to be bound.`
         - **scalar**: :class:`TiScalar` - `A scalar to be bound.`
-        - **tensor**: :class:`TiTensor` - `A tensor to be bound.`
     """
 
     _fields_ = [
@@ -301,8 +300,7 @@ class TiArgumentValue(Union):
         ("f32", c_float),
         ("ndarray", TiNdArray),
         ("texture", TiTexture),
-        ("scalar", TiScalar),
-        ("tensor", TiTensor)
+        ("scalar", TiScalar)
     ]
 
 
